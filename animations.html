@@ -24,36 +24,41 @@
         .circle{
             border-radius: 50%;
             background-color: yellow;
-            height: 50%;
-            width: 30%;
+            height: 42%;
+            width: 25%;
             box-shadow: 10px 20px 40px yellow;
             display: flex;
             justify-content: center;
             align-items: center;
       
-            animation: sunn 2s linear infinite alternate-reverse;
-            transform-origin: 100px 100px;
+            animation: sunn 5s linear infinite;
+            
         }
         .sun{
           border-radius: 50%;
           height: 42%;
           width: 25%;
           background-color: rgb(195, 130, 10);
-          /* display: flex;
-          justify-content: center;
-          align-items: center; */
           position: absolute;
 
         }
         
          @keyframes sunn {
            0%{
-            transform: translate(-5px, -5px);
-            height: 42%;
-            width: 25%;
+            transform: scale(1);
+           }
+           25%{
+            transform: scale(1.2);
+            box-shadow: 2px 2px 60px yellow;
+           }
+           50%{
+            transform: scale(1);
+           }
+           75%{
+            transform: scale(1.2);
            }
            100%{
-            transform: translate(5px, 15px);
+            transform: scale(1) translate(15px, 20px);
             
            }
         }
