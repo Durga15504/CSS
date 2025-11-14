@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Selectors</title>
+    <style>
+        h1{                             /* this is element selector */
+            text-align: center;
+            color: red;
+        }
+
+        #sub-head{                      /* this is id selector */
+            background-color: lightblue;
+        }
+
+        .cent{                           /* this is class selector */
+            color: blue;
+        }
+
+        h5,pre{                          /* this is grouping selector */
+            color: chocolate;
+        }
+        
+        *{                               /* this is universal selector */
+            padding: 0%;
+            margin: 5px;
+            background-color:beige;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Selectorss</h1>
+    <h3 id="sub-head">Element Selector:</h3>
+    <p class="cent">It selects html elements based on 'tagname'.</p>
+    <p><h5>Example:</h5>
+    <pre>p {
+  text-align: center;
+  color: red;
+}</pre></p>
+<p>Here, all &lt p &gt elements on the page will be center-aligned, with a red text color.  And written in internal or external css.</p>
+
+<h3 id="sub-head">id selector:</h3>
+<p class="cent">To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+<p><h5>Example:</h5>
+<pre>#main {
+  background-color: yellow;
+}</pre>
+</p>
+<p>Applies to the element with id="main". 
+ And written in internal or external css.
+</p>
+<p><h5>Ex:</h5>&ltp id="main"&gt It is a id selector example. &lt/p&gt </p>
+
+<h3 id="sub-head">Class Selector:</h3>
+<p class="cent">The class selector selects HTML elements with a specific class attribute.</p>
+<p>To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+<p><h5>Example:</h5>
+<pre>.center {
+  text-align: center;
+  color: red;
+}</pre></p>
+<p> Applies to all elements with class="center". And can applies to multiple elements.</p>
+<p><h5>Ex:</h5>&ltp class="center"&gt It is a Class selector example. &lt/p&gt</p>
+
+<h3 id="sub-head">Grouping Selector:</h3>
+<p class="cent">To group selectors, separate each selector with a comma. It minimizes the code when we want to give same styling for multiple elments we use this selector.</p>
+<p><h5>Example:</h5><big>Instead of writing like this--</big></p>
+<pre>h1 {
+  text-align: center;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+}
+
+p {
+  text-align: center;
+  color: red;
+}</pre>
+<p><big>We can minimize the code--</big></p>
+<pre>h1, h2, p {
+  text-align: center;
+  color: red;
+}</pre>
+
+<h3 id="sub-head">Universal Selector:</h3>
+<p class="cent">The universal selector (*) selects all HTML elements on the page.</p>
+<p><h5>Example:</h5>
+<pre>* {
+  margin: 0;
+  padding: 0;
+}</pre></p>
+</body>
+</html>

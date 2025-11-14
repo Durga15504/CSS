@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator selectors</title>
+    <style>
+        
+        h1{
+            text-align: center;
+            color: red;
+        }
+        .CS > h3{                              /* This is child selector */     
+            background-color: rgb(198, 243, 243);
+        }
+        p + h5{                                 /* This is adjacent-sibling selector */
+            color: rgb(38, 56, 161);
+        }
+        .CS pre{                                /* This is descendant selector */
+            color: rgb(172, 67, 67);
+        }
+        h3 ~ p{                                 /* This is general sibling selector */
+            color: rgb(28, 107, 56);
+        }
+    </style>
+</head>
+<body>
+    <h1>Combinator Selectors</h1>
+    <div class="CS">
+        <h3>Child Selector:</h3>
+        <p>It selects only the elements that are <ins>direct children</ins> (represent with <mark>></mark>) of a specific element.</p>
+        <p><h5>Example HTML:</h5>
+        <pre>&ltdiv&gt
+    &lth1&gt Child Selector &lt/h1&gt
+    &ltp&gt This is a Child Selector &lt/p&gt
+&lt/div&gt
+        </pre>
+        <p>Here &lth1&gt and &ltp&gt are direct children of &ltdiv&gt</p>
+    </p>
+    </div>
+
+    <div class="CS">
+        <h3>Descendant Selector:</h3>
+        <p>Selects all elements that are nested inside another element (at any level) or <ins>indirect children</ins> (represent with <mark>space</mark>) of a specific element.</p>
+        <p><h5>Example HTML:</h5>
+        <pre>&ltdiv&gt
+    &lth1 class=parent&gt Descendant Selector &lt/h1&gt
+    &ltp&gt This is a Descendant Selector &lt/p&gt
+    &ltdiv class=child&gt
+          &lth2&gt It is direct child to child class and indirect child to parent class
+            
+&lt/div&gt</pre></p>
+    </div>
+
+    <div class="CS">
+        <h3>Adjacent-Sibling Selector:</h3>
+        <p>Selects an element that is the <ins>next sibling</ins> (represent with <mark>+</mark>) immediately after another.</p>
+        <p><h5>Example HTML:</h5></p>
+         <pre>&ltdiv&gt
+    &lth1&gt Adjacent-Sibling Selector &lt/h1&gt
+    &ltp&gt This is 1st para &lt/p&gt
+    &ltp&gt This is 2nd para and is not immediately after the heading. &lt/p&gt
+&lt/div&gt
+        </pre>
+        <p><h5>Example CSS:</h5></p>
+        <pre>h1 + p {
+  color: blue;
+  font-weight: bold;
+}
+</pre>
+<p><h5>Explanation</h5></p>
+<p>HERE:  h1 + p → Selects the first &ltp&gt that comes right after &lth1&gt.
+This makes only the first paragraph blue and bold.</p>
+<p>It does not selects second &ltp&gt because it is not immediate sibling.</p>
+    </div>
+
+    <div class="CS">
+        <h3>General-Sibling Selector:</h3>
+        <p>Selects <ins>all sibling elements</ins> that come after a specific element (not necessarily immediately) and represents with <mark>~</mark>.</p>
+        <p><h5>Example HTML:</h5></p>
+         <pre>&ltdiv&gt
+    &lth1&gt General-Sibling Selector &lt/h1&gt
+    &ltp&gt This is 1st para &lt/p&gt
+    &ltp&gt This is 2nd para and not immediately after the heading. &lt/p&gt
+    &ltp&gt This is 3rd para &lt/p&gt
+&lt/div&gt
+        </pre>
+        <p><h5>Example CSS:</h5></p>
+        <pre>h1 ~ p {
+    color: red;
+    background-color: yellow;
+}
+</pre>
+<p><h5>Explanation</h5></p>
+<p>HERE: h1 ~ p → It selects all the p elements. The color and background-color applies for 3 p elements i.e., it makes 1st, 2nd and 3rd para red color and yellow background.</p>
+    </div>
+</body>
+</html>

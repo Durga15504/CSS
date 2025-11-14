@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+    <style>
+        h1{
+            text-align: center;
+            color: red;
+        }
+        .a{
+            color: blue;
+            background-color: aquamarine;
+            height: 150px;
+            width: 150px;
+            transform: translate(50px, 20px);
+        }
+        .b{
+            color: blue;
+            background-color: aquamarine;
+            height: 150px;
+            width: 150px;
+            transform: scale(1.5,1);
+        }
+        .c{
+            color: blue;
+            background-color: aquamarine;
+            height: 150px;
+            width: 150px;
+            transform: rotate(30deg);
+        }
+        .d{
+             color: blue;
+            background-color: aquamarine;
+            height: 150px;
+            width: 150px;
+            transform: skew(10deg, 20deg);
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Transforms</h1>
+    <p>The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements.</p>
+    <h3>1. Translate(x,y)</h3>
+    <p>Moves element left/right, top/bottom using x and y axis.</p>
+    <p>EX:- transform: translate(50px, 20px);</p>
+    <div class="a">translate</div>
+    <p>It moves 50px right side and 20px down. If we give translate(-50px, -20px) then it moves 50px left and 20px top.</p>
+
+    <h3>2. Scale(x,y)</h3>
+    <p>It increases or decreases the element size.</p>
+    <p>EX:- transform: scale(1.5,1);</p>
+    <div class="b">scale</div>
+    <p>increases width 1.5 times and heigth 1 time.</p>
+
+    <h3>3. Rotate(angle)</h3>
+    <p>Rotates by using degrees angle in 2D.</p>
+    <p>EX:-  transform: rotate(30deg);</p>
+    <div class="c">rotate</div>
+    <p>rotates element by 30deg</p>
+
+    <h3>4. Skew(x,y)</h3>
+    <p>Rotates by using degrees in 3D or tilts the element along X and Y axis.</p>
+    <p>EX:- transform: skew(10deg, 20deg)</p>
+    <div class="d">skew</div>
+    <p>tilts the element along X-axis in 10deg and Y-axis in 20deg.</p>
+</body>
+</html>

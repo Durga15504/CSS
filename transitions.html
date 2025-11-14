@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+    .container {
+      display: flex;
+      gap: 50px;
+      padding-left: 50px;
+      margin-top: 40px;
+    }
+
+    .menu {
+      position: relative;
+    }
+
+    .menu > p {
+      font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: all 0s ease-in;
+    }
+
+    .menu:hover > p {
+        color: green;
+    }
+
+    .menu > p:hover {
+      color: green;
+      transform: scale(1.02);
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 45px;
+      left: 0;
+      /* border-radius: 0px; */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      /* padding: 10px 20px; */
+      z-index: 100;
+    }
+
+    .menu:hover .dropdown {
+      display: block;
+    }
+
+    .dropdown p {
+      width: 100%;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      padding: 5px 20px 5px 20px;
+      width: max-content;
+    }
+
+    .dropdown p:hover {
+      transform: translateX(1px);
+      background-color: rgb(244, 242, 242);
+    }
+        
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="menu">
+        <p>Courses</p>
+        <div class="dropdown">
+            <p>DSA/Placements</p>
+            <p>GATE 2026 Prep</p>
+            <p>ML & Data Science</p>
+            <p>Development</p>
+            <p>Cloud/DevOps</p>
+            <p>Programming Languages</p>
+            <p>All Courses</p>
+        </div>
+
+    </div>
+
+    <div class="menu">
+        <p>Tutorials</p>
+        <div class="dropdown">
+            <p>Python</p>
+            <p>Java</p>
+            <p>DSA</p>
+            <p>ML & Data Science</p>
+            <p>Interview Corner</p>
+            <p>Programming Languages</p>
+            <p>Web Development</p>
+            <p>GATE</p>
+            <p>CS Subjects</p>
+            <p>DevOps</p>
+            <p>School Learning</p>
+            <p>Software and Tools</p>
+        </div>
+    </div>
+
+    <div class="menu">
+        <p>Practice</p>
+        <div class="dropdown">
+            <p>Practice Coding Problems</p>
+            <p>Nation Skillup-Free Courses</p>
+            <p>Problem of the Day</p>
+            <p>Build AI Agent(Free)</p>
+            <p>StudyIn: Global Contest</p>
+        </div>
+
+    </div>
+   
+    <div class="menu">
+        <p>Jobs</p>
+        <div class="dropdown">
+            <p>Apply Now!</p>
+            <p>Post Jobs</p>
+            <p>Jobs Updates</p>
+        </div>
+    </div>
+   
+   </div>
+</body>
+</html>

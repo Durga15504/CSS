@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        body{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height: 100vh;
+        }
+        .container{
+            background-color: rgb(195, 130, 10);
+            height: 350px;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .circle{
+            border-radius: 50%;
+            background-color: yellow;
+            height: 50%;
+            width: 30%;
+            box-shadow: 10px 20px 40px yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      
+            animation: sunn 2s linear infinite alternate-reverse;
+            transform-origin: 100px 100px;
+        }
+        .sun{
+          border-radius: 50%;
+          height: 42%;
+          width: 25%;
+          background-color: rgb(195, 130, 10);
+          /* display: flex;
+          justify-content: center;
+          align-items: center; */
+          position: absolute;
+
+        }
+        
+         @keyframes sunn {
+           0%{
+            transform: translate(-5px, -5px);
+            height: 42%;
+            width: 25%;
+           }
+           100%{
+            transform: translate(5px, 15px);
+            
+           }
+        }
+
+        
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="circle"></div>
+      <div class="sun"></div>
+       
+    </div>
+</body>
+</html>
