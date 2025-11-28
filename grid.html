@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .img1{grid-area: rose;}
+        .img2{grid-area: horse;}
+        .img3{grid-area: moon;}
+        .img4{grid-area: lion;}
+        .img5{grid-area: paris;}
+        .img6{grid-area: flower;}
+        .img7{grid-area: colour;}
+        .img8{grid-area: duck;}
+        .img9{grid-area: night;}
+        .img10{grid-area: eye;}
+        .img11{grid-area: farmer;}
+        .img12{grid-area: track;}
+        .img13{grid-area: shine;}
+       .main{
+        display: grid;
+        grid-template-areas: 
+        'rose horse moon lion paris'
+        'flower horse moon lion paris'
+        'flower colour duck night eye'
+        'farmer colour track night shine';
+        width: 100%;
+        height: 100vh;
+        gap: 5px;
+       }
+       .main > div {
+            width: 100%;
+            height: 100%;
+       }
+       .main img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="img1">
+        <img src="https://images.pexels.com/photos/57905/pexels-photo-57905.jpeg?cs=srgb&dl=black-and-white-love-petals-57905.jpg&fm=jpg" alt="">
+    </div>
+    <div class="img2">
+        <img src="https://images.pexels.com/photos/52500/horse-herd-fog-nature-52500.jpeg?cs=srgb&dl=pexels-pixabay-52500.jpg&fm=jpg" alt="">
+    </div>
+    <div class="img3">
+        <img src="https://images.pexels.com/photos/748626/pexels-photo-748626.jpeg?cs=srgb&dl=sea-landscape-nature-748626.jpg&fm=jpg" alt="">
+    </div>
+    <div class="img4">
+        <img src="https://tse4.mm.bing.net/th/id/OIP._SBHC1agaLZniYTcyMabxAHaLH?w=1792&h=2688&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    </div>
+    <div class="img5">
+        <img src="https://th.bing.com/th/id/R.33d33d7ed6ebff4f9c92f2d9ae1c9faa?rik=uYU1SvsKUgZ6iw&riu=http%3a%2f%2fhdwpro.com%2fwp-content%2fuploads%2f2017%2f10%2fFree-Black-and-White.jpg&ehk=knNHTiAZLsZfi5rLTmNqxvi0pRB5G%2fS12PnaIMRL1Lw%3d&risl=&pid=ImgRaw&r=0" alt="">
+    </div>
+    <div class="img6">
+        <img src="https://wallpapers.com/images/file/black-and-white-pictures-w3dr45httggtq9kc.jpg" alt="">
+    </div>
+    <div class="img7">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.7Ck2Q89C8Z7b9caOD-8_9QHaHa?w=2048&h=2048&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    </div>
+    <div class="img8">
+        <img src="https://th.bing.com/th/id/R.051066d0ee631a5141924a38bcf2d707?rik=1I4OOUpM6JueRw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-YTFMNb1z6D8%2fUGq-78V_XOI%2fAAAAAAAAKmw%2fnHvq16Mok8g%2fs1600%2fBlack%2band%2bWhite%2bWallpapers%2b4.jpg&ehk=7Oj%2f6Bx22600hKYeDPrXNZOjBQrBWd1kVZKg7gV50t4%3d&risl=&pid=ImgRaw&r=0" alt="">
+    </div>
+    <div class="img9">
+        <img src="https://wallpapers.com/images/file/cool-black-and-white-pictures-vhuqswsbqlfbc4es.jpg" alt="">
+    </div>
+    <div class="img10">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.aMiHU1VV0NirmacqwpgsSAHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    </div>
+    <div class="img11">
+        <img src="https://cdn.pixabay.com/photo/2024/02/05/09/31/man-8554081_1280.jpg" alt="">
+    </div>
+    <div class="img12">
+        <img src="https://wallpapers.com/images/file/black-and-white-pictures-tmc10fprda3edwkp.jpg" alt="">
+    </div>
+    <div class="img13">
+        <img src="https://images.pexels.com/photos/285286/pexels-photo-285286.jpeg?cs=srgb&dl=pexels-nikolai-ulltang-285286.jpg&fm=jpg" alt="">
+    </div>
+    </div>
+</body>
+</html>
